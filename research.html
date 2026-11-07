@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research and Innovation at the University of Hargeisa – Directorate of Research, grants, ethical clearance, and scholarly publications." />
+  <title>Research and Innovation – University of Hargeisa</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/cropped-uoh-site-icon-512-32x32.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       TOP UTILITY BAR
+  ═══════════════════════════════════════ -->
+  <div class="top-bar" role="banner">
+    <div class="container top-bar__inner">
+      <div class="top-bar__left">
+        <span><i class="fas fa-map-marker-alt"></i> UoH Road, Pepsi Area, Hargeisa, Somaliland</span>
+        <span><i class="fas fa-phone"></i> <a href="tel:+252638888120">(+252) 638 888 120</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:contact@uoh.edu.so">contact@uoh.edu.so</a></span>
+      </div>
+      <div class="top-bar__right">
+        <a href="portal.html#student" class="top-bar__link" aria-label="Student Portal">Student Portal</a>
+        <span class="divider">|</span>
+        <a href="portal.html#staff" class="top-bar__link" aria-label="Staff Portal">Staff</a>
+        <span class="divider">|</span>
+        <a href="portal.html#library" class="top-bar__link" aria-label="Digital Library">E-Library</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       BRANDING HEADER
+  ═══════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="site-header__logo" aria-label="University of Hargeisa Home">
+        <img
+          src="assets/images/UoH_Header_Logo_224x68.png"
+          alt="University of Hargeisa – Official Logo"
+          width="224"
+          height="68"
+          loading="eager"
+        />
+      </a>
+
+      <!-- Motto -->
+      <div class="site-header__motto" aria-label="University Motto">
+        <span class="motto-title">UNIVERSITY OF HARGEISA</span>
+        <span class="motto-tagline">Knowledge · Leadership · Service</span>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       PRIMARY NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="primary-nav" id="main-nav" aria-label="Primary navigation">
+    <div class="container">
+      <ul class="nav__list" role="menubar">
+
+        <!-- Home -->
+        <li class="nav__item" role="none">
+          <a href="index.html" class="nav__link" role="menuitem">Home</a>
+        </li>
+
+        <!-- About Us -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="about.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            About Us <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="About Us submenu">
+            <li role="none"><a href="about.html" class="dropdown__link" role="menuitem"><i class="fas fa-info-circle"></i> About Overview</a></li>
+            <li role="none"><a href="about.html#vision" class="dropdown__link" role="menuitem"><i class="fas fa-eye"></i> Vision and Mission</a></li>
+            <li role="none"><a href="about.html#senate" class="dropdown__link" role="menuitem"><i class="fas fa-landmark"></i> University Senate</a></li>
+            <li role="none"><a href="about.html#campuses" class="dropdown__link" role="menuitem"><i class="fas fa-map-marked-alt"></i> Campuses and Facilities</a></li>
+          </ul>
+        </li>
+
+        <!-- Academics -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="academics.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            Academics <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Academics submenu">
+            <li role="none"><a href="academics.html" class="dropdown__link" role="menuitem"><i class="fas fa-graduation-cap"></i> Academic Overview</a></li>
+            <li role="none"><a href="academics.html#colleges" class="dropdown__link" role="menuitem"><i class="fas fa-university"></i> Colleges and Faculties</a></li>
+            <li role="none"><a href="academics.html#graduate" class="dropdown__link" role="menuitem"><i class="fas fa-user-graduate"></i> School of Graduate Studies</a></li>
+            <li role="none"><a href="academics.html#institutes" class="dropdown__link" role="menuitem"><i class="fas fa-flask"></i> Research Institutes</a></li>
+          </ul>
+        </li>
+
+        <!-- Research -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="research.html" class="nav__link nav__link--active" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            Research <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Research submenu">
+            <li role="none"><a href="research.html" class="dropdown__link" role="menuitem"><i class="fas fa-microscope"></i> Research Overview</a></li>
+            <li role="none"><a href="research.html#committee" class="dropdown__link" role="menuitem"><i class="fas fa-users-cog"></i> Research Committee</a></li>
+            <li role="none"><a href="research.html#funding" class="dropdown__link" role="menuitem"><i class="fas fa-hand-holding-usd"></i> Grants and Funding</a></li>
+            <li role="none"><a href="research.html#publications" class="dropdown__link" role="menuitem"><i class="fas fa-book-open"></i> Publications and Journals</a></li>
+          </ul>
+        </li>
+
+        <!-- Admissions -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="admissions.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            Admissions <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Admissions submenu">
+            <li role="none"><a href="admissions.html" class="dropdown__link" role="menuitem"><i class="fas fa-door-open"></i> Admissions Overview</a></li>
+            <li role="none"><a href="admissions.html#undergraduate" class="dropdown__link" role="menuitem"><i class="fas fa-user-graduate"></i> Undergraduate Admissions</a></li>
+            <li role="none"><a href="admissions.html#graduate" class="dropdown__link" role="menuitem"><i class="fas fa-award"></i> Graduate and Scholarships</a></li>
+            <li role="none"><a href="admissions.html#how-to-apply" class="dropdown__link" role="menuitem"><i class="fas fa-file-signature"></i> How to Apply</a></li>
+          </ul>
+        </li>
+
+        <!-- News -->
+        <li class="nav__item" role="none">
+          <a href="news.html" class="nav__link" role="menuitem">News</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav__item" role="none">
+          <a href="contact.html" class="nav__link" role="menuitem">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       PAGE HERO BANNER
+  ═══════════════════════════════════════ -->
+  <header class="page-banner" aria-label="Page header">
+    <div class="container page-banner__inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__separator">/</span>
+        <span class="breadcrumb__current">Research and Innovation</span>
+      </nav>
+      <h1 class="page-banner__title">Research and Innovation</h1>
+      <p class="page-banner__lead">
+        Advancing scientific inquiry, evidence-based policy formulation, and technological innovation 
+        to solve critical societal challenges in Somaliland and the Horn of Africa.
+      </p>
+    </div>
+  </header>
+
+  <!-- Quick Sub-navigation -->
+  <nav class="page-subnav" aria-label="Section navigation">
+    <div class="container">
+      <div class="page-subnav__list">
+        <a href="#priorities" class="page-subnav__link"><i class="fas fa-bullseye"></i> Research Priorities</a>
+        <a href="#committee" class="page-subnav__link"><i class="fas fa-users-cog"></i> Research Committee</a>
+        <a href="#funding" class="page-subnav__link"><i class="fas fa-hand-holding-usd"></i> Grants and Funding</a>
+        <a href="#publications" class="page-subnav__link"><i class="fas fa-book-open"></i> Publications and Journals</a>
+        <a href="#partnerships" class="page-subnav__link"><i class="fas fa-handshake"></i> Partnerships</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 1: RESEARCH PRIORITIES
+  ═══════════════════════════════════════ -->
+  <section class="section" id="priorities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Strategic Agenda</span>
+        <h2 class="section-title">Institutional Research Priority Areas</h2>
+        <p class="section-subtitle">
+          Aligning university scientific output with national development plans and global sustainable development objectives.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-heartbeat"></i></div>
+            <h3 class="feature-box__title">Public Health and Epidemiology</h3>
+          </div>
+          <p class="feature-box__body">
+            Investigating maternal and child mortality reduction, infectious disease surveillance, 
+            waterborne pathogen diagnostics, and primary health infrastructure resilience in pastoral communities.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-cloud-sun-rain"></i></div>
+            <h3 class="feature-box__title">Climate Adaptation and Drylands</h3>
+          </div>
+          <p class="feature-box__body">
+            Developing drought-resistant sorghum varieties, rangeland rehabilitation methodologies, 
+            sand dam water harvesting, and renewable solar power mini-grids for off-grid settlements.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-balance-scale"></i></div>
+            <h3 class="feature-box__title">Governance, Law, and Customary Xeer</h3>
+          </div>
+          <p class="feature-box__body">
+            Documenting the interplay between traditional customary law (Xeer), Islamic jurisprudence, 
+            and modern statutory constitutionalism in commercial adjudication and peacebuilding.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-chart-line"></i></div>
+            <h3 class="feature-box__title">Macroeconomics and Financial Systems</h3>
+          </div>
+          <p class="feature-box__body">
+            Research on mobile money adoption, remittance flows, inflationary trends, port logistics optimization at Berbera, 
+            and regional trade integration across the Horn of Africa.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="feature-box__title">Information Systems and AI</h3>
+          </div>
+          <p class="feature-box__body">
+            Natural language processing for Somali dialect translation, automated agricultural pest detection, 
+            and secure digital archiving of historical land registry records.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-landmark"></i></div>
+            <h3 class="feature-box__title">Somali Heritage and Oral Archives</h3>
+          </div>
+          <p class="feature-box__body">
+            Digitizing rare audio recordings of classic Somali poets, folklore preservation, historical cartography, 
+            and archaeological site documentation in collaboration with Gaarood Institute.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       RESEARCH PHOTO SHOWCASE
+  ═══════════════════════════════════════ -->
+  <section class="section" style="padding-top: 0; padding-bottom: 50px;">
+    <div class="container">
+      <div class="gallery-grid" style="grid-template-columns: repeat(3,1fr); gap: 16px; display: grid;">
+        <figure style="margin: 0; overflow: hidden; border-radius: var(--radius-sm); position: relative;">
+          <img
+            src="assets/images/science-symposium.jpg"
+            alt="University of Hargeisa faculty presenting at a scientific symposium"
+            style="width: 100%; height: 240px; object-fit: cover; display: block;"
+            loading="lazy"
+          />
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(13,52,35,0.78); color: #fff; font-size: 0.82rem; padding: 8px 12px;">
+            Faculty Science Symposium
+          </figcaption>
+        </figure>
+        <figure style="margin: 0; overflow: hidden; border-radius: var(--radius-sm); position: relative;">
+          <img
+            src="assets/images/research-forum.jpg"
+            alt="University of Hargeisa research forum with academic panel discussion"
+            style="width: 100%; height: 240px; object-fit: cover; display: block;"
+            loading="lazy"
+          />
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(13,52,35,0.78); color: #fff; font-size: 0.82rem; padding: 8px 12px;">
+            Research and Innovation Forum
+          </figcaption>
+        </figure>
+        <figure style="margin: 0; overflow: hidden; border-radius: var(--radius-sm); position: relative;">
+          <img
+            src="assets/images/library-research.jpg"
+            alt="Postgraduate students conducting research in the University of Hargeisa library"
+            style="width: 100%; height: 240px; object-fit: cover; display: block;"
+            loading="lazy"
+          />
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(13,52,35,0.78); color: #fff; font-size: 0.82rem; padding: 8px 12px;">
+            Graduate Research Library
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 2: RESEARCH COMMITTEE
+  ═══════════════════════════════════════ -->
+  <section class="section" id="committee" style="background-color: var(--clr-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Governance and Ethics</span>
+        <h2 class="section-title">The Directorate of Research and Ethics Committee</h2>
+        <p class="section-subtitle">
+          Ensuring methodological rigor, ethical standards, and legal compliance across all university research.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <h3 style="font-family: var(--font-heading); color: var(--clr-primary); margin-bottom: 14px;">
+            Directorate of Research and Community Services (DRCS)
+          </h3>
+          <p style="line-height: 1.7; color: #333333; margin-bottom: 16px;">
+            The DRCS serves as the central administrative hub managing university research grants, 
+            academic conferences, intellectual property guidance, and publication dissemination.
+          </p>
+          <ul class="feature-box__list">
+            <li>Coordinates competitive annual faculty research grant cycles</li>
+            <li>Maintains the institutional repository and publication index</li>
+            <li>Negotiates memorandums of understanding with international research consortia</li>
+            <li>Provides statistical analysis training and research software licenses for faculty</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 style="font-family: var(--font-heading); color: var(--clr-primary); margin-bottom: 14px;">
+            Institutional Review Board (IRB)
+          </h3>
+          <p style="line-height: 1.7; color: #333333; margin-bottom: 16px;">
+            The University of Hargeisa IRB reviews all research proposals involving human participants, 
+            patient medical records, vulnerable populations, or environmental impact assessments.
+          </p>
+
+          <div class="callout-box">
+            <h4>Ethical Clearance Certificate</h4>
+            <p>
+              All faculty members, postgraduate scholars, and visiting international researchers 
+              must obtain formal IRB ethical clearance prior to commencing field data collection.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 3: GRANTS AND FUNDING
+  ═══════════════════════════════════════ -->
+  <section class="section" id="funding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Funding Opportunities</span>
+        <h2 class="section-title">Research Grants and Seed Funding</h2>
+        <p class="section-subtitle">
+          Empowering faculty investigators and postgraduate scholars with competitive financial support.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Grant Category</th>
+              <th>Target Beneficiary</th>
+              <th>Grant Scope</th>
+              <th>Application Window</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Institutional Seed Grant</strong></td>
+              <td>Junior academic faculty and early-career researchers</td>
+              <td>Supports preliminary field surveys, laboratory consumables, and baseline data collection</td>
+              <td>Annually in October</td>
+            </tr>
+            <tr>
+              <td><strong>Principal Investigator Award</strong></td>
+              <td>Senior faculty and collaborative multi-college teams</td>
+              <td>Major empirical research projects addressing strategic national priorities</td>
+              <td>Annually in February</td>
+            </tr>
+            <tr>
+              <td><strong>Postgraduate Thesis Support</strong></td>
+              <td>Master of Science, Master of Arts, and Ph.D. candidates</td>
+              <td>Field travel stipend, statistical data processing, and manuscript publication fees</td>
+              <td>Rolling quarterly review</td>
+            </tr>
+            <tr>
+              <td><strong>International Consortium Match</strong></td>
+              <td>Joint projects with partner overseas universities</td>
+              <td>Co-funding for international symposia, exchange visits, and multi-country trials</td>
+              <td>Continuous open call</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 4: PUBLICATIONS AND JOURNALS
+  ═══════════════════════════════════════ -->
+  <section class="section" id="publications" style="background-color: var(--clr-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Scholarly Output</span>
+        <h2 class="section-title">Publications and Peer-Reviewed Journals</h2>
+        <p class="section-subtitle">
+          Disseminating verified scientific findings, legal analyses, and socio-economic evaluations.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-journal-whills"></i></div>
+            <h3 class="feature-box__title">Hargeisa Science Journal</h3>
+          </div>
+          <p class="feature-box__body">
+            A peer-reviewed biannual publication highlighting original empirical papers in public health, 
+            civil engineering, agronomy, environmental sciences, and computer software architecture.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-balance-scale"></i></div>
+            <h3 class="feature-box__title">Somaliland Law Review</h3>
+          </div>
+          <p class="feature-box__body">
+            Published by the College of Law, examining constitutional court rulings, statutory codification, 
+            customary Xeer harmonization, and maritime jurisdiction in the Gulf of Aden.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-file-alt"></i></div>
+            <h3 class="feature-box__title">Policy Brief Series</h3>
+          </div>
+          <p class="feature-box__body">
+            Succinct, actionable evidence summaries delivered directly to governmental ministries, 
+            the Somaliland Parliament, regional health authorities, and international development agencies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 5: PARTNERSHIPS
+  ═══════════════════════════════════════ -->
+  <section class="section" id="partnerships">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__text-col">
+          <span class="section-eyebrow">Collaborative Network</span>
+          <h2 class="section-title">International Academic Partnerships</h2>
+          <p class="about__lead">
+            The University of Hargeisa collaborates with prestigious higher education institutions, 
+            United Nations agencies, and scientific bodies across Africa, Europe, North America, and Asia.
+          </p>
+          <p class="about__body">
+            Partnership activities include faculty exchange programmes, joint degree curricula, 
+            reciprocal library access, and co-authored research grants. Through these global bridges, 
+            our scholars ensure that Somaliland perspectives are represented in worldwide academic discourse.
+          </p>
+          <a href="contact.html" class="btn btn--primary">
+            Inquire About Research Partnerships <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="about__image-col">
+          <figure class="about__figure">
+            <img
+              src="assets/images/WhatsApp-Image-2026-10-12-at-16.52.36-768x576.jpeg"
+              alt="University of Hargeisa academic partnership signing ceremony"
+              class="about__image"
+              loading="lazy"
+            />
+            <div class="about__badge">
+              <span class="about__badge-year">Global</span>
+              <span class="about__badge-text">Linkages</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__main">
+      <div class="container site-footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html" aria-label="University of Hargeisa Home">
+            <img
+              src="assets/images/px2.png"
+              alt="University of Hargeisa footer emblem"
+              class="footer__logo"
+              loading="lazy"
+            />
+          </a>
+          <p class="footer__about">
+            Somaliland's premier chartered public university — committed to knowledge, leadership, 
+            and service since 1998.
+          </p>
+          <address class="footer__address">
+            <i class="fas fa-map-marker-alt"></i>
+            UoH Road, Pepsi Area,<br />Hargeisa, Somaliland
+          </address>
+          <div class="footer__social" aria-label="Follow us">
+            <a href="https://www.facebook.com/universityofhargeisa" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/UoH_Official" target="_blank" rel="noopener" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@UniversityofHargeisa" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/school/university-of-hargeisa/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/universityofhargeisa/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="footer-col" aria-label="Quick links">
+          <h4 class="footer-col__heading">Quick Links</h4>
+          <ul class="footer-col__list">
+            <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-angle-right"></i> Academics</a></li>
+            <li><a href="research.html"><i class="fas fa-angle-right"></i> Research and Innovation</a></li>
+            <li><a href="admissions.html"><i class="fas fa-angle-right"></i> Admissions</a></li>
+            <li><a href="news.html"><i class="fas fa-angle-right"></i> News and Events</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- Colleges -->
+        <nav class="footer-col" aria-label="Colleges">
+          <h4 class="footer-col__heading">Our Colleges</h4>
+          <ul class="footer-col__list">
+            <li><a href="academics.html#engineering"><i class="fas fa-angle-right"></i> Engineering and Computing</a></li>
+            <li><a href="academics.html#medicine"><i class="fas fa-angle-right"></i> Medicine and Health Sciences</a></li>
+            <li><a href="academics.html#business"><i class="fas fa-angle-right"></i> Business and Economics</a></li>
+            <li><a href="academics.html#law"><i class="fas fa-angle-right"></i> Sharia and Law</a></li>
+            <li><a href="academics.html#education"><i class="fas fa-angle-right"></i> Education</a></li>
+            <li><a href="academics.html#agriculture"><i class="fas fa-angle-right"></i> Agriculture and Veterinary</a></li>
+            <li><a href="academics.html#social-sciences"><i class="fas fa-angle-right"></i> Social Sciences</a></li>
+            <li><a href="academics.html#graduate"><i class="fas fa-angle-right"></i> Graduate Studies</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact -->
+        <div class="footer-col" aria-label="Contact information">
+          <h4 class="footer-col__heading">Campus Information</h4>
+          <ul class="footer-col__contact-list">
+            <li>
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <a href="tel:+252638888120">(+252) 638 888 120</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:contact@uoh.edu.so">contact@uoh.edu.so</a>
+            </li>
+            <li>
+              <i class="fas fa-map-pin" aria-hidden="true"></i>
+              <span>Pepsi Campus, Hargeisa</span>
+            </li>
+            <li>
+              <i class="fas fa-clock" aria-hidden="true"></i>
+              <span>Sat – Thu: 8:00 AM – 4:00 PM</span>
+            </li>
+          </ul>
+
+          <div class="footer__portals">
+            <a href="portal.html" class="btn btn--gold btn--sm">
+              <i class="fas fa-sign-in-alt"></i> University Portals
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="site-footer__bottom">
+      <div class="container site-footer__bottom-inner">
+        <p>© <span id="copyright-year">2026</span> University of Hargeisa. All rights reserved.</p>
+        <p class="footer__credits">Knowledge · Leadership · Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       BACK TO TOP
+  ═══════════════════════════════════════ -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

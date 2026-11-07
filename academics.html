@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academics at the University of Hargeisa – Explore 7 colleges, 37 undergraduate degrees, and 35 graduate programmes across multiple campuses." />
+  <title>Academics – University of Hargeisa</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/cropped-uoh-site-icon-512-32x32.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       TOP UTILITY BAR
+  ═══════════════════════════════════════ -->
+  <div class="top-bar" role="banner">
+    <div class="container top-bar__inner">
+      <div class="top-bar__left">
+        <span><i class="fas fa-map-marker-alt"></i> UoH Road, Pepsi Area, Hargeisa, Somaliland</span>
+        <span><i class="fas fa-phone"></i> <a href="tel:+252638888120">(+252) 638 888 120</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:contact@uoh.edu.so">contact@uoh.edu.so</a></span>
+      </div>
+      <div class="top-bar__right">
+        <a href="portal.html#student" class="top-bar__link" aria-label="Student Portal">Student Portal</a>
+        <span class="divider">|</span>
+        <a href="portal.html#staff" class="top-bar__link" aria-label="Staff Portal">Staff</a>
+        <span class="divider">|</span>
+        <a href="portal.html#library" class="top-bar__link" aria-label="Digital Library">E-Library</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       BRANDING HEADER
+  ═══════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="site-header__logo" aria-label="University of Hargeisa Home">
+        <img
+          src="assets/images/UoH_Header_Logo_224x68.png"
+          alt="University of Hargeisa – Official Logo"
+          width="224"
+          height="68"
+          loading="eager"
+        />
+      </a>
+
+      <!-- Motto -->
+      <div class="site-header__motto" aria-label="University Motto">
+        <span class="motto-title">UNIVERSITY OF HARGEISA</span>
+        <span class="motto-tagline">Knowledge · Leadership · Service</span>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       PRIMARY NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="primary-nav" id="main-nav" aria-label="Primary navigation">
+    <div class="container">
+      <ul class="nav__list" role="menubar">
+
+        <!-- Home -->
+        <li class="nav__item" role="none">
+          <a href="index.html" class="nav__link" role="menuitem">Home</a>
+        </li>
+
+        <!-- About Us -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="about.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            About Us <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="About Us submenu">
+            <li role="none"><a href="about.html" class="dropdown__link" role="menuitem"><i class="fas fa-info-circle"></i> About Overview</a></li>
+            <li role="none"><a href="about.html#vision" class="dropdown__link" role="menuitem"><i class="fas fa-eye"></i> Vision and Mission</a></li>
+            <li role="none"><a href="about.html#senate" class="dropdown__link" role="menuitem"><i class="fas fa-landmark"></i> University Senate</a></li>
+            <li role="none"><a href="about.html#campuses" class="dropdown__link" role="menuitem"><i class="fas fa-map-marked-alt"></i> Campuses and Facilities</a></li>
+          </ul>
+        </li>
+
+        <!-- Academics -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="academics.html" class="nav__link nav__link--active" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            Academics <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Academics submenu">
+            <li role="none"><a href="academics.html" class="dropdown__link" role="menuitem"><i class="fas fa-graduation-cap"></i> Academic Overview</a></li>
+            <li role="none"><a href="academics.html#colleges" class="dropdown__link" role="menuitem"><i class="fas fa-university"></i> Colleges and Faculties</a></li>
+            <li role="none"><a href="academics.html#graduate" class="dropdown__link" role="menuitem"><i class="fas fa-user-graduate"></i> School of Graduate Studies</a></li>
+            <li role="none"><a href="academics.html#institutes" class="dropdown__link" role="menuitem"><i class="fas fa-flask"></i> Research Institutes</a></li>
+          </ul>
+        </li>
+
+        <!-- Research -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="research.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            Research <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Research submenu">
+            <li role="none"><a href="research.html" class="dropdown__link" role="menuitem"><i class="fas fa-microscope"></i> Research Overview</a></li>
+            <li role="none"><a href="research.html#committee" class="dropdown__link" role="menuitem"><i class="fas fa-users-cog"></i> Research Committee</a></li>
+            <li role="none"><a href="research.html#funding" class="dropdown__link" role="menuitem"><i class="fas fa-hand-holding-usd"></i> Grants and Funding</a></li>
+            <li role="none"><a href="research.html#publications" class="dropdown__link" role="menuitem"><i class="fas fa-book-open"></i> Publications and Journals</a></li>
+          </ul>
+        </li>
+
+        <!-- Admissions -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="admissions.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            Admissions <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Admissions submenu">
+            <li role="none"><a href="admissions.html" class="dropdown__link" role="menuitem"><i class="fas fa-door-open"></i> Admissions Overview</a></li>
+            <li role="none"><a href="admissions.html#undergraduate" class="dropdown__link" role="menuitem"><i class="fas fa-user-graduate"></i> Undergraduate Admissions</a></li>
+            <li role="none"><a href="admissions.html#graduate" class="dropdown__link" role="menuitem"><i class="fas fa-award"></i> Graduate and Scholarships</a></li>
+            <li role="none"><a href="admissions.html#how-to-apply" class="dropdown__link" role="menuitem"><i class="fas fa-file-signature"></i> How to Apply</a></li>
+          </ul>
+        </li>
+
+        <!-- News -->
+        <li class="nav__item" role="none">
+          <a href="news.html" class="nav__link" role="menuitem">News</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav__item" role="none">
+          <a href="contact.html" class="nav__link" role="menuitem">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       PAGE HERO BANNER
+  ═══════════════════════════════════════ -->
+  <header class="page-banner" aria-label="Page header">
+    <div class="container page-banner__inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__separator">/</span>
+        <span class="breadcrumb__current">Academics</span>
+      </nav>
+      <h1 class="page-banner__title">Academic Colleges and Programmes</h1>
+      <p class="page-banner__lead">
+        Explore seven constituent colleges, 37 undergraduate programmes, and 35 advanced graduate degrees 
+        designed to develop ethical leadership, technical mastery, and professional competence.
+      </p>
+    </div>
+  </header>
+
+  <!-- Quick Sub-navigation -->
+  <nav class="page-subnav" aria-label="Section navigation">
+    <div class="container">
+      <div class="page-subnav__list">
+        <a href="#engineering" class="page-subnav__link"><i class="fas fa-cogs"></i> Engineering and IT</a>
+        <a href="#medicine" class="page-subnav__link"><i class="fas fa-heartbeat"></i> Medicine and Health</a>
+        <a href="#business" class="page-subnav__link"><i class="fas fa-chart-line"></i> Business and Economics</a>
+        <a href="#law" class="page-subnav__link"><i class="fas fa-balance-scale"></i> Sharia and Law</a>
+        <a href="#education" class="page-subnav__link"><i class="fas fa-chalkboard-teacher"></i> Education</a>
+        <a href="#agriculture" class="page-subnav__link"><i class="fas fa-leaf"></i> Agriculture and Veterinary</a>
+        <a href="#social-sciences" class="page-subnav__link"><i class="fas fa-globe"></i> Social Sciences</a>
+        <a href="#graduate" class="page-subnav__link"><i class="fas fa-user-graduate"></i> Graduate School</a>
+        <a href="#institutes" class="page-subnav__link"><i class="fas fa-flask"></i> Institutes</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       MAIN ACADEMIC CONTENT
+  ═══════════════════════════════════════ -->
+  <main class="section" id="colleges">
+    <div class="container">
+
+      <!-- Academic Summary Stats -->
+      <div class="grid-4" style="margin-bottom: 40px;">
+        <div class="feature-box" style="text-align: center;">
+          <div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--clr-primary);">7</div>
+          <div style="font-weight: 600; font-size: 0.9rem; color: var(--clr-muted); text-transform: uppercase;">Constituent Colleges</div>
+        </div>
+        <div class="feature-box" style="text-align: center;">
+          <div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--clr-primary);">37</div>
+          <div style="font-weight: 600; font-size: 0.9rem; color: var(--clr-muted); text-transform: uppercase;">Undergraduate Degrees</div>
+        </div>
+        <div class="feature-box" style="text-align: center;">
+          <div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--clr-primary);">35</div>
+          <div style="font-weight: 600; font-size: 0.9rem; color: var(--clr-muted); text-transform: uppercase;">Postgraduate Degrees</div>
+        </div>
+        <div class="feature-box" style="text-align: center;">
+          <div style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 900; color: var(--clr-primary);">400+</div>
+          <div style="font-weight: 600; font-size: 0.9rem; color: var(--clr-muted); text-transform: uppercase;">Professors and Lecturers</div>
+        </div>
+      </div>
+
+      <!-- COLLEGE 1: ENGINEERING -->
+      <article class="college-item" id="engineering">
+        <div class="college-item--split">
+          <img src="assets/images/engineering-lab.jpg" alt="Engineering and computing students in laboratory" class="college-item__thumb" loading="lazy" />
+          <div>
+            <div class="college-item__head">
+              <div>
+                <span class="college-item__badge">Constituent College</span>
+                <h2 class="college-item__title">College of Engineering, Computing and Information Technology</h2>
+              </div>
+              <a href="admissions.html#undergraduate" class="btn btn--primary btn--sm">Apply for Admission</a>
+            </div>
+            <p class="college-item__desc">
+              Established to meet the urgent national demand for infrastructure architects, software engineers, 
+              and telecommunication experts. The college features state-of-the-art computer labs, networking apparatus, 
+              and structural testing facilities.
+            </p>
+            <div class="college-item__subheading">Academic Departments and Degrees:</div>
+            <div class="department-tags">
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Civil and Structural Engineering</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Electrical and Electronics Engineering</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Computer Science and Information Technology</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Software Engineering and Systems Analysis</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> M.Sc. Information and Communication Technology</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- COLLEGE 2: MEDICINE -->
+      <article class="college-item" id="medicine">
+        <div class="college-item--split">
+          <img src="assets/images/medical-students.jpg" alt="Medicine and Health Sciences clinical students" class="college-item__thumb" loading="lazy" />
+          <div>
+            <div class="college-item__head">
+              <div>
+                <span class="college-item__badge">Constituent College</span>
+                <h2 class="college-item__title">College of Medicine and Health Sciences</h2>
+              </div>
+              <a href="admissions.html#undergraduate" class="btn btn--primary btn--sm">Apply for Admission</a>
+            </div>
+            <p class="college-item__desc">
+              Located at the Ayaha Medical Campus, this college is the premier medical training institution in Somaliland. 
+              Its curriculum integrates hospital clinical rotations, community health field assignments, and advanced laboratory diagnostics.
+            </p>
+            <div class="college-item__subheading">Academic Departments and Degrees:</div>
+            <div class="department-tags">
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Bachelor of Medicine and Bachelor of Surgery (MBBS)</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Clinical Nursing and Midwifery</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Public Health and Epidemiology</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Pharmacy and Pharmaceutical Sciences</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Medical Laboratory Technology</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Master of Public Health (MPH)</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- COLLEGE 3: BUSINESS -->
+      <article class="college-item" id="business">
+        <div class="college-item--split">
+          <img src="assets/images/academics-hall.jpg" alt="Business and economics students in lecture theatre" class="college-item__thumb" loading="lazy" />
+          <div>
+            <div class="college-item__head">
+              <div>
+                <span class="college-item__badge">Founding College</span>
+                <h2 class="college-item__title">College of Business, Economics and Statistics</h2>
+              </div>
+              <a href="admissions.html#undergraduate" class="btn btn--primary btn--sm">Apply for Admission</a>
+            </div>
+            <p class="college-item__desc">
+              One of the founding pillars of the university since 2000, preparing leaders for regional financial institutions, 
+              telecommunication enterprises, international non-governmental organisations, and public ministries.
+            </p>
+            <div class="college-item__subheading">Academic Departments and Degrees:</div>
+            <div class="department-tags">
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Business Administration and Management</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Accounting and Financial Management</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Development Economics and Finance</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Statistics and Quantitative Data Science</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Procurement and Supply Chain Logistics</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Master of Business Administration (MBA)</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- COLLEGE 4: SHARIA AND LAW -->
+      <article class="college-item" id="law">
+        <div class="college-item--split">
+          <img src="assets/images/research-forum.jpg" alt="Law students moot court and legal forum" class="college-item__thumb" loading="lazy" />
+          <div>
+            <div class="college-item__head">
+              <div>
+                <span class="college-item__badge">Founding College</span>
+                <h2 class="college-item__title">College of Sharia and Law</h2>
+              </div>
+              <a href="admissions.html#undergraduate" class="btn btn--primary btn--sm">Apply for Admission</a>
+            </div>
+            <p class="college-item__desc">
+              The premier legal institution in the nation, providing comprehensive instruction in Islamic jurisprudence, 
+              constitutional law, international human rights, and corporate legal practice. Operates the University Legal Clinic.
+            </p>
+            <div class="college-item__subheading">Academic Departments and Degrees:</div>
+            <div class="department-tags">
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Bachelor of Laws (LL.B.)</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Bachelor of Sharia and Islamic Jurisprudence</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Postgraduate Diploma in Legal Practice</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Master of Laws (LL.M.) in Commercial and Public Law</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- COLLEGE 5: EDUCATION -->
+      <article class="college-item" id="education">
+        <div class="college-item--split">
+          <img src="assets/images/faculty-development.jpg" alt="Faculty of education teacher training workshop" class="college-item__thumb" loading="lazy" />
+          <div>
+            <div class="college-item__head">
+              <div>
+                <span class="college-item__badge">Constituent College</span>
+                <h2 class="college-item__title">College of Education and Behavioral Sciences</h2>
+              </div>
+              <a href="admissions.html#undergraduate" class="btn btn--primary btn--sm">Apply for Admission</a>
+            </div>
+            <p class="college-item__desc">
+              Dedicated to elevating educational quality across Somaliland by producing certified teachers, educational managers, 
+              counselors, and psychological researchers equipped with modern pedagogical methodologies.
+            </p>
+            <div class="college-item__subheading">Academic Departments and Degrees:</div>
+            <div class="department-tags">
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Bachelor of Education in Science and Mathematics</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Bachelor of Education in Humanities and Social Studies</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Psychology and Educational Counseling</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Master of Educational Administration and Planning</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- COLLEGE 6: AGRICULTURE -->
+      <article class="college-item" id="agriculture">
+        <div class="college-item--split">
+          <img src="assets/images/student-activities.jpg" alt="Agriculture and Veterinary student fieldwork" class="college-item__thumb" loading="lazy" />
+          <div>
+            <div class="college-item__head">
+              <div>
+                <span class="college-item__badge">Constituent College</span>
+                <h2 class="college-item__title">College of Agriculture, Veterinary and Environmental Sciences</h2>
+              </div>
+              <a href="admissions.html#undergraduate" class="btn btn--primary btn--sm">Apply for Admission</a>
+            </div>
+            <p class="college-item__desc">
+              Confronting regional environmental challenges, pastoral livestock diseases, soil degradation, and water conservation. 
+              The college operates an active demonstration farm, animal health clinic, and seed research facility.
+            </p>
+            <div class="college-item__subheading">Academic Departments and Degrees:</div>
+            <div class="department-tags">
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Bachelor of Veterinary Medicine (DVM)</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Dryland Agronomy and Horticultural Sciences</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Animal Husbandry and Production Technology</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.Sc. Environmental Studies and Natural Resource Management</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> M.Sc. Sustainable Agriculture and Climate Resilience</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- COLLEGE 7: SOCIAL SCIENCES -->
+      <article class="college-item" id="social-sciences">
+        <div class="college-item--split">
+          <img src="assets/images/student-conference.jpg" alt="Social Sciences diplomacy and political science summit" class="college-item__thumb" loading="lazy" />
+          <div>
+            <div class="college-item__head">
+              <div>
+                <span class="college-item__badge">Constituent College</span>
+                <h2 class="college-item__title">College of Social Sciences and Humanities</h2>
+              </div>
+              <a href="admissions.html#undergraduate" class="btn btn--primary btn--sm">Apply for Admission</a>
+            </div>
+            <p class="college-item__desc">
+              Cultivating critical inquiry, civic discourse, and cultural preservation through rigorous curricula in international relations, 
+              sociology, mass communication, and Somali linguistics and literature.
+            </p>
+            <div class="college-item__subheading">Academic Departments and Degrees:</div>
+            <div class="department-tags">
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.A. Political Science and International Relations</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.A. Sociology and Community Development</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.A. Somali Language, Literature, and Cultural Studies</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> B.A. Journalism and Media Communication</span>
+              <span class="department-tag"><i class="fas fa-check-circle" style="color: var(--clr-gold);"></i> Master of International Relations and Diplomacy</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SCHOOL OF GRADUATE STUDIES -->
+      <article class="college-item" id="graduate" style="border-top: 4px solid var(--clr-gold); background: #faf8f0;">
+        <div class="college-item--split">
+          <img src="assets/images/graduate-lecture.jpg" alt="School of graduate studies postgraduate seminar room" class="college-item__thumb" loading="lazy" />
+          <div>
+            <div class="college-item__head">
+              <div>
+                <span class="college-item__badge" style="background: var(--clr-gold); color: var(--clr-primary-dk);">Postgraduate Centre</span>
+                <h2 class="college-item__title">School of Graduate Studies</h2>
+              </div>
+              <a href="admissions.html#graduate" class="btn btn--primary btn--sm">Postgraduate Admissions</a>
+            </div>
+            <p class="college-item__desc">
+              As Somaliland's only chartered graduate school, the School of Graduate Studies administers 35 postgraduate programmes 
+              in collaboration with regional and international partner universities. Cohorts benefit from seminar-style instruction, 
+              dedicated research supervisions, and flexible evening/weekend modular scheduling.
+            </p>
+            <div class="college-item__subheading">Featured Postgraduate Offerings:</div>
+            <div class="department-tags">
+              <span class="department-tag"><i class="fas fa-award" style="color: var(--clr-gold);"></i> Executive MBA in Strategic Management</span>
+              <span class="department-tag"><i class="fas fa-award" style="color: var(--clr-gold);"></i> Master of Public Health (MPH)</span>
+              <span class="department-tag"><i class="fas fa-award" style="color: var(--clr-gold);"></i> Master of Laws (LL.M.) in Constitutional and Commercial Law</span>
+              <span class="department-tag"><i class="fas fa-award" style="color: var(--clr-gold);"></i> Master of Science in Project Planning and Management</span>
+              <span class="department-tag"><i class="fas fa-award" style="color: var(--clr-gold);"></i> Master of Peace and Conflict Resolution</span>
+              <span class="department-tag"><i class="fas fa-award" style="color: var(--clr-gold);"></i> Ph.D. Research Degree Pathways in Key Disciplines</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- INSTITUTES SECTION -->
+      <div id="institutes" style="margin-top: 50px;">
+        <div class="section-header">
+          <span class="section-eyebrow">Applied Research and Outreach</span>
+          <h2 class="section-title">Specialized University Institutes</h2>
+          <p class="section-subtitle">
+            Autonomous centres of excellence conducting targeted research, policy advocacy, and community legal support.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature-box">
+            <img src="assets/images/library-research.jpg" alt="Gaarood Institute Somali archives and literature" class="card-img" loading="lazy" />
+            <div class="feature-box__header">
+              <div class="feature-box__icon"><i class="fas fa-book-reader"></i></div>
+              <h3 class="feature-box__title">Gaarood Institute</h3>
+            </div>
+            <p class="feature-box__body">
+              The premier repository and academic centre dedicated to Somali oral literature, poetry archives, 
+              historical documentation, and lexicographical research.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <img src="assets/images/Heshiis-Laga-Gaadhay-Arday-Danyar-Ah-oo-Jaamacada-Hargeysi-Cadhisay.webp" alt="University legal aid clinic community service" class="card-img" loading="lazy" />
+            <div class="feature-box__header">
+              <div class="feature-box__icon"><i class="fas fa-balance-scale"></i></div>
+              <h3 class="feature-box__title">University Legal Clinic</h3>
+            </div>
+            <p class="feature-box__body">
+              Affiliated with the College of Law, offering practical litigation training to senior law students 
+              while providing free pro bono legal defense for disadvantaged citizens.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <img src="assets/images/science-symposium.jpg" alt="Peace and conflict studies policy roundtable" class="card-img" loading="lazy" />
+            <div class="feature-box__header">
+              <div class="feature-box__icon"><i class="fas fa-dove"></i></div>
+              <h3 class="feature-box__title">Peace and Conflict Institute</h3>
+            </div>
+            <p class="feature-box__body">
+              Conducts empirical policy research on traditional Somali dispute resolution mechanisms (Xeer), 
+              regional security dynamics, and governance across the Horn of Africa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__main">
+      <div class="container site-footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html" aria-label="University of Hargeisa Home">
+            <img
+              src="assets/images/px2.png"
+              alt="University of Hargeisa footer emblem"
+              class="footer__logo"
+              loading="lazy"
+            />
+          </a>
+          <p class="footer__about">
+            Somaliland's premier chartered public university — committed to knowledge, leadership, 
+            and service since 1998.
+          </p>
+          <address class="footer__address">
+            <i class="fas fa-map-marker-alt"></i>
+            UoH Road, Pepsi Area,<br />Hargeisa, Somaliland
+          </address>
+          <div class="footer__social" aria-label="Follow us">
+            <a href="https://www.facebook.com/universityofhargeisa" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/UoH_Official" target="_blank" rel="noopener" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@UniversityofHargeisa" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/school/university-of-hargeisa/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/universityofhargeisa/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="footer-col" aria-label="Quick links">
+          <h4 class="footer-col__heading">Quick Links</h4>
+          <ul class="footer-col__list">
+            <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-angle-right"></i> Academics</a></li>
+            <li><a href="research.html"><i class="fas fa-angle-right"></i> Research and Innovation</a></li>
+            <li><a href="admissions.html"><i class="fas fa-angle-right"></i> Admissions</a></li>
+            <li><a href="news.html"><i class="fas fa-angle-right"></i> News and Events</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- Colleges -->
+        <nav class="footer-col" aria-label="Colleges">
+          <h4 class="footer-col__heading">Our Colleges</h4>
+          <ul class="footer-col__list">
+            <li><a href="academics.html#engineering"><i class="fas fa-angle-right"></i> Engineering and Computing</a></li>
+            <li><a href="academics.html#medicine"><i class="fas fa-angle-right"></i> Medicine and Health Sciences</a></li>
+            <li><a href="academics.html#business"><i class="fas fa-angle-right"></i> Business and Economics</a></li>
+            <li><a href="academics.html#law"><i class="fas fa-angle-right"></i> Sharia and Law</a></li>
+            <li><a href="academics.html#education"><i class="fas fa-angle-right"></i> Education</a></li>
+            <li><a href="academics.html#agriculture"><i class="fas fa-angle-right"></i> Agriculture and Veterinary</a></li>
+            <li><a href="academics.html#social-sciences"><i class="fas fa-angle-right"></i> Social Sciences</a></li>
+            <li><a href="academics.html#graduate"><i class="fas fa-angle-right"></i> Graduate Studies</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact -->
+        <div class="footer-col" aria-label="Contact information">
+          <h4 class="footer-col__heading">Campus Information</h4>
+          <ul class="footer-col__contact-list">
+            <li>
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <a href="tel:+252638888120">(+252) 638 888 120</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:contact@uoh.edu.so">contact@uoh.edu.so</a>
+            </li>
+            <li>
+              <i class="fas fa-map-pin" aria-hidden="true"></i>
+              <span>Pepsi Campus, Hargeisa</span>
+            </li>
+            <li>
+              <i class="fas fa-clock" aria-hidden="true"></i>
+              <span>Sat – Thu: 8:00 AM – 4:00 PM</span>
+            </li>
+          </ul>
+
+          <div class="footer__portals">
+            <a href="portal.html" class="btn btn--gold btn--sm">
+              <i class="fas fa-sign-in-alt"></i> University Portals
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="site-footer__bottom">
+      <div class="container site-footer__bottom-inner">
+        <p>© <span id="copyright-year">2026</span> University of Hargeisa. All rights reserved.</p>
+        <p class="footer__credits">Knowledge · Leadership · Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       BACK TO TOP
+  ═══════════════════════════════════════ -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

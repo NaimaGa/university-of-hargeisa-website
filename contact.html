@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact the University of Hargeisa – Campus directions, departmental email directory, telephone numbers, and inquiry form." />
+  <title>Contact Us – University of Hargeisa</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/cropped-uoh-site-icon-512-32x32.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       TOP UTILITY BAR
+  ═══════════════════════════════════════ -->
+  <div class="top-bar" role="banner">
+    <div class="container top-bar__inner">
+      <div class="top-bar__left">
+        <span><i class="fas fa-map-marker-alt"></i> UoH Road, Pepsi Area, Hargeisa, Somaliland</span>
+        <span><i class="fas fa-phone"></i> <a href="tel:+252638888120">(+252) 638 888 120</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:contact@uoh.edu.so">contact@uoh.edu.so</a></span>
+      </div>
+      <div class="top-bar__right">
+        <a href="portal.html#student" class="top-bar__link" aria-label="Student Portal">Student Portal</a>
+        <span class="divider">|</span>
+        <a href="portal.html#staff" class="top-bar__link" aria-label="Staff Portal">Staff</a>
+        <span class="divider">|</span>
+        <a href="portal.html#library" class="top-bar__link" aria-label="Digital Library">E-Library</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       BRANDING HEADER
+  ═══════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="site-header__logo" aria-label="University of Hargeisa Home">
+        <img
+          src="assets/images/UoH_Header_Logo_224x68.png"
+          alt="University of Hargeisa – Official Logo"
+          width="224"
+          height="68"
+          loading="eager"
+        />
+      </a>
+
+      <!-- Motto -->
+      <div class="site-header__motto" aria-label="University Motto">
+        <span class="motto-title">UNIVERSITY OF HARGEISA</span>
+        <span class="motto-tagline">Knowledge · Leadership · Service</span>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       PRIMARY NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="primary-nav" id="main-nav" aria-label="Primary navigation">
+    <div class="container">
+      <ul class="nav__list" role="menubar">
+
+        <!-- Home -->
+        <li class="nav__item" role="none">
+          <a href="index.html" class="nav__link" role="menuitem">Home</a>
+        </li>
+
+        <!-- About Us -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="about.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            About Us <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="About Us submenu">
+            <li role="none"><a href="about.html" class="dropdown__link" role="menuitem"><i class="fas fa-info-circle"></i> About Overview</a></li>
+            <li role="none"><a href="about.html#vision" class="dropdown__link" role="menuitem"><i class="fas fa-eye"></i> Vision and Mission</a></li>
+            <li role="none"><a href="about.html#senate" class="dropdown__link" role="menuitem"><i class="fas fa-landmark"></i> University Senate</a></li>
+            <li role="none"><a href="about.html#campuses" class="dropdown__link" role="menuitem"><i class="fas fa-map-marked-alt"></i> Campuses and Facilities</a></li>
+          </ul>
+        </li>
+
+        <!-- Academics -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="academics.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            Academics <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Academics submenu">
+            <li role="none"><a href="academics.html" class="dropdown__link" role="menuitem"><i class="fas fa-graduation-cap"></i> Academic Overview</a></li>
+            <li role="none"><a href="academics.html#colleges" class="dropdown__link" role="menuitem"><i class="fas fa-university"></i> Colleges and Faculties</a></li>
+            <li role="none"><a href="academics.html#graduate" class="dropdown__link" role="menuitem"><i class="fas fa-user-graduate"></i> School of Graduate Studies</a></li>
+            <li role="none"><a href="academics.html#institutes" class="dropdown__link" role="menuitem"><i class="fas fa-flask"></i> Research Institutes</a></li>
+          </ul>
+        </li>
+
+        <!-- Research -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="research.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            Research <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Research submenu">
+            <li role="none"><a href="research.html" class="dropdown__link" role="menuitem"><i class="fas fa-microscope"></i> Research Overview</a></li>
+            <li role="none"><a href="research.html#committee" class="dropdown__link" role="menuitem"><i class="fas fa-users-cog"></i> Research Committee</a></li>
+            <li role="none"><a href="research.html#funding" class="dropdown__link" role="menuitem"><i class="fas fa-hand-holding-usd"></i> Grants and Funding</a></li>
+            <li role="none"><a href="research.html#publications" class="dropdown__link" role="menuitem"><i class="fas fa-book-open"></i> Publications and Journals</a></li>
+          </ul>
+        </li>
+
+        <!-- Admissions -->
+        <li class="nav__item nav__item--dropdown" role="none">
+          <a href="admissions.html" class="nav__link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            Admissions <i class="fas fa-chevron-down nav__arrow" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Admissions submenu">
+            <li role="none"><a href="admissions.html" class="dropdown__link" role="menuitem"><i class="fas fa-door-open"></i> Admissions Overview</a></li>
+            <li role="none"><a href="admissions.html#undergraduate" class="dropdown__link" role="menuitem"><i class="fas fa-user-graduate"></i> Undergraduate Admissions</a></li>
+            <li role="none"><a href="admissions.html#graduate" class="dropdown__link" role="menuitem"><i class="fas fa-award"></i> Graduate and Scholarships</a></li>
+            <li role="none"><a href="admissions.html#how-to-apply" class="dropdown__link" role="menuitem"><i class="fas fa-file-signature"></i> How to Apply</a></li>
+          </ul>
+        </li>
+
+        <!-- News -->
+        <li class="nav__item" role="none">
+          <a href="news.html" class="nav__link" role="menuitem">News</a>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav__item" role="none">
+          <a href="contact.html" class="nav__link nav__link--active" role="menuitem">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       PAGE HERO BANNER
+  ═══════════════════════════════════════ -->
+  <header class="page-banner" aria-label="Page header">
+    <div class="container page-banner__inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__separator">/</span>
+        <span class="breadcrumb__current">Contact Us</span>
+      </nav>
+      <h1 class="page-banner__title">Contact the University</h1>
+      <p class="page-banner__lead">
+        We welcome communications from prospective students, academic researchers, alumni, and institutional partners. 
+        Reach out directly to specific offices or send us an inquiry using the secure form below.
+      </p>
+    </div>
+  </header>
+
+  <!-- Quick Sub-navigation -->
+  <nav class="page-subnav" aria-label="Section navigation">
+    <div class="container">
+      <div class="page-subnav__list">
+        <a href="#info" class="page-subnav__link"><i class="fas fa-address-card"></i> Contact Information</a>
+        <a href="#form-section" class="page-subnav__link"><i class="fas fa-envelope-open-text"></i> Send a Message</a>
+        <a href="#directory" class="page-subnav__link"><i class="fas fa-phone-alt"></i> Department Directory</a>
+        <a href="#campuses-map" class="page-subnav__link"><i class="fas fa-map-marked-alt"></i> Campus Locations</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT INFORMATION AND FORM
+  ═══════════════════════════════════════ -->
+  <section class="section" id="info">
+    <div class="container contact__inner">
+
+      <div class="contact__info">
+        <span class="section-eyebrow">Central Administration</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact__lead">
+          Our central administrative offices at the Pepsi Campus in Hargeisa are open Saturday through Thursday. 
+          Admissions advisers and student service counselors are available for in-person consultations.
+        </p>
+
+        <ul class="contact__details" aria-label="Contact details">
+          <li>
+            <div class="contact__icon-wrap" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Headquarters Location</strong><br />
+              UoH Road, Pepsi Area, Ahmed Dhagah District,<br />
+              Hargeisa, Somaliland
+            </div>
+          </li>
+          <li>
+            <div class="contact__icon-wrap" aria-hidden="true"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Telephone Enquiries</strong><br />
+              <a href="tel:+252638888120">(+252) 638 888 120</a><br />
+              <a href="tel:+252634424000">(+252) 634 424 000</a>
+            </div>
+          </li>
+          <li>
+            <div class="contact__icon-wrap" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Electronic Mail</strong><br />
+              <a href="mailto:contact@uoh.edu.so">contact@uoh.edu.so</a><br />
+              <a href="mailto:info@uoh.edu.so">info@uoh.edu.so</a>
+            </div>
+          </li>
+          <li>
+            <div class="contact__icon-wrap" aria-hidden="true"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Working Hours</strong><br />
+              Saturday to Thursday: 8:00 AM – 4:00 PM<br />
+              Friday: Closed
+            </div>
+          </li>
+        </ul>
+
+        <div class="contact__social" aria-label="Social media channels">
+          <a href="https://www.facebook.com/universityofhargeisa" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/UoH_Official" target="_blank" rel="noopener" aria-label="Twitter/X" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/@UniversityofHargeisa" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/school/university-of-hargeisa/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/universityofhargeisa/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact__form-wrap" id="form-section">
+        <form class="contact-form" id="contact-form" novalidate aria-label="General contact form">
+          <h3 class="contact-form__title">Send an Official Message</h3>
+
+          <div class="form-group">
+            <label for="cf-name" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="cf-name" name="name" class="form-input" placeholder="e.g. Faadumo Aadan" required autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="cf-email" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+            <input type="email" id="cf-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="cf-subject" class="form-label">Inquiry Topic</label>
+            <select id="cf-subject" name="subject" class="form-input form-select">
+              <option value="" disabled selected>— Select destination office —</option>
+              <option value="admissions">Admissions and Enrolment Office</option>
+              <option value="academics">Academic Affairs Directorate</option>
+              <option value="graduate">School of Graduate Studies</option>
+              <option value="research">Directorate of Research and Innovation</option>
+              <option value="scholarships">Scholarships and Student Welfare</option>
+              <option value="finance">Student Finance and Billing</option>
+              <option value="other">General University Inquiries</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cf-message" class="form-label">Message Details <span aria-hidden="true">*</span></label>
+            <textarea id="cf-message" name="message" class="form-input form-textarea" rows="5" placeholder="Please write your detailed message or question here…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="form-submit">
+            <i class="fas fa-paper-plane"></i> Submit Message
+          </button>
+          <p class="contact-form__feedback" id="form-feedback" aria-live="polite" role="alert"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       DEPARTMENT DIRECTORY
+  ═══════════════════════════════════════ -->
+  <section class="section" id="directory" style="background-color: var(--clr-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Direct Contact Points</span>
+        <h2 class="section-title">Departmental Directory</h2>
+        <p class="section-subtitle">
+          Contact key university directorates, collegiate offices, and student support services directly.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Office / Department</th>
+              <th>Campus Location</th>
+              <th>Telephone Extension</th>
+              <th>Direct Email Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Admissions Directorate</strong></td>
+              <td>Main Campus, Block A</td>
+              <td>(+252) 638 888 121</td>
+              <td><a href="mailto:admissions@uoh.edu.so" style="color: var(--clr-primary); font-weight: 500;">admissions@uoh.edu.so</a></td>
+            </tr>
+            <tr>
+              <td><strong>Office of the Registrar</strong></td>
+              <td>Main Campus, Block A</td>
+              <td>(+252) 638 888 122</td>
+              <td><a href="mailto:registrar@uoh.edu.so" style="color: var(--clr-primary); font-weight: 500;">registrar@uoh.edu.so</a></td>
+            </tr>
+            <tr>
+              <td><strong>School of Graduate Studies</strong></td>
+              <td>Graduate Studies Complex</td>
+              <td>(+252) 638 888 123</td>
+              <td><a href="mailto:sgs@uoh.edu.so" style="color: var(--clr-primary); font-weight: 500;">sgs@uoh.edu.so</a></td>
+            </tr>
+            <tr>
+              <td><strong>College of Medicine and Health</strong></td>
+              <td>Ayaha Health Campus</td>
+              <td>(+252) 638 888 124</td>
+              <td><a href="mailto:medicine@uoh.edu.so" style="color: var(--clr-primary); font-weight: 500;">medicine@uoh.edu.so</a></td>
+            </tr>
+            <tr>
+              <td><strong>College of Engineering and IT</strong></td>
+              <td>Main Campus, Engineering Wing</td>
+              <td>(+252) 638 888 125</td>
+              <td><a href="mailto:engineering@uoh.edu.so" style="color: var(--clr-primary); font-weight: 500;">engineering@uoh.edu.so</a></td>
+            </tr>
+            <tr>
+              <td><strong>Research and Community Directorate</strong></td>
+              <td>Main Campus, Research Centre</td>
+              <td>(+252) 638 888 126</td>
+              <td><a href="mailto:research@uoh.edu.so" style="color: var(--clr-primary); font-weight: 500;">research@uoh.edu.so</a></td>
+            </tr>
+            <tr>
+              <td><strong>Information Technology Directorate</strong></td>
+              <td>Central Computing Wing</td>
+              <td>(+252) 638 888 127</td>
+              <td><a href="mailto:ict@uoh.edu.so" style="color: var(--clr-primary); font-weight: 500;">ict@uoh.edu.so</a></td>
+            </tr>
+            <tr>
+              <td><strong>Student Affairs and Counseling</strong></td>
+              <td>Student Union Building</td>
+              <td>(+252) 638 888 128</td>
+              <td><a href="mailto:students@uoh.edu.so" style="color: var(--clr-primary); font-weight: 500;">students@uoh.edu.so</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CAMPUS LOCATIONS AND DIRECTIONS
+  ═══════════════════════════════════════ -->
+  <section class="section" id="campuses-map">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Visiting Hargeisa</span>
+        <h2 class="section-title">Campus Locations and Transit Guide</h2>
+        <p class="section-subtitle">
+          How to locate and navigate our campuses throughout Hargeisa.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-university"></i></div>
+            <h3 class="feature-box__title">Main Pepsi Campus</h3>
+          </div>
+          <p class="feature-box__body">
+            Located along the main University Road in the Pepsi Area of Ahmed Dhagah District. 
+            Accessible via central public minibuses and taxi terminals departing from Downtown Hargeisa.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-hospital-user"></i></div>
+            <h3 class="feature-box__title">Ayaha Medical Campus</h3>
+          </div>
+          <p class="feature-box__body">
+            Situated in eastern Hargeisa within the Ayaha sector, directly connected by paved municipal roadways 
+            to Hargeisa Group Hospital clinical teaching grounds.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-box__header">
+            <div class="feature-box__icon"><i class="fas fa-tractor"></i></div>
+            <h3 class="feature-box__title">Agricultural Field Station</h3>
+          </div>
+          <p class="feature-box__body">
+            Positioned along the agricultural perimeter of Hargeisa, housing field research demonstration plots, 
+            meteorological monitoring equipment, and veterinary diagnostics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CAMPUS PHOTO STRIP
+  ═══════════════════════════════════════ -->
+  <section style="padding: 40px 0; background: #f6f6f4;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <figure style="margin: 0; overflow: hidden; border-radius: var(--radius-sm); position: relative;">
+          <img
+            src="assets/images/campus-quad.jpg"
+            alt="The main quadrangle and grounds of the University of Hargeisa Pepsi Campus"
+            style="width: 100%; height: 260px; object-fit: cover; display: block;"
+            loading="lazy"
+          />
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(13,52,35,0.75); color: #fff; font-size: 0.82rem; padding: 9px 14px;">
+            Main Pepsi Campus — University Road, Hargeisa
+          </figcaption>
+        </figure>
+        <figure style="margin: 0; overflow: hidden; border-radius: var(--radius-sm); position: relative;">
+          <img
+            src="assets/images/5.jpg"
+            alt="University of Hargeisa main administrative building exterior"
+            style="width: 100%; height: 260px; object-fit: cover; display: block;"
+            loading="lazy"
+          />
+          <figcaption style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(13,52,35,0.75); color: #fff; font-size: 0.82rem; padding: 9px 14px;">
+            Administration and Admissions Building
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__main">
+      <div class="container site-footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html" aria-label="University of Hargeisa Home">
+            <img
+              src="assets/images/px2.png"
+              alt="University of Hargeisa footer emblem"
+              class="footer__logo"
+              loading="lazy"
+            />
+          </a>
+          <p class="footer__about">
+            Somaliland's premier chartered public university — committed to knowledge, leadership, 
+            and service since 1998.
+          </p>
+          <address class="footer__address">
+            <i class="fas fa-map-marker-alt"></i>
+            UoH Road, Pepsi Area,<br />Hargeisa, Somaliland
+          </address>
+          <div class="footer__social" aria-label="Follow us">
+            <a href="https://www.facebook.com/universityofhargeisa" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/UoH_Official" target="_blank" rel="noopener" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@UniversityofHargeisa" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/school/university-of-hargeisa/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/universityofhargeisa/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="footer-col" aria-label="Quick links">
+          <h4 class="footer-col__heading">Quick Links</h4>
+          <ul class="footer-col__list">
+            <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-angle-right"></i> Academics</a></li>
+            <li><a href="research.html"><i class="fas fa-angle-right"></i> Research and Innovation</a></li>
+            <li><a href="admissions.html"><i class="fas fa-angle-right"></i> Admissions</a></li>
+            <li><a href="news.html"><i class="fas fa-angle-right"></i> News and Events</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- Colleges -->
+        <nav class="footer-col" aria-label="Colleges">
+          <h4 class="footer-col__heading">Our Colleges</h4>
+          <ul class="footer-col__list">
+            <li><a href="academics.html#engineering"><i class="fas fa-angle-right"></i> Engineering and Computing</a></li>
+            <li><a href="academics.html#medicine"><i class="fas fa-angle-right"></i> Medicine and Health Sciences</a></li>
+            <li><a href="academics.html#business"><i class="fas fa-angle-right"></i> Business and Economics</a></li>
+            <li><a href="academics.html#law"><i class="fas fa-angle-right"></i> Sharia and Law</a></li>
+            <li><a href="academics.html#education"><i class="fas fa-angle-right"></i> Education</a></li>
+            <li><a href="academics.html#agriculture"><i class="fas fa-angle-right"></i> Agriculture and Veterinary</a></li>
+            <li><a href="academics.html#social-sciences"><i class="fas fa-angle-right"></i> Social Sciences</a></li>
+            <li><a href="academics.html#graduate"><i class="fas fa-angle-right"></i> Graduate Studies</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact -->
+        <div class="footer-col" aria-label="Contact information">
+          <h4 class="footer-col__heading">Campus Information</h4>
+          <ul class="footer-col__contact-list">
+            <li>
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <a href="tel:+252638888120">(+252) 638 888 120</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:contact@uoh.edu.so">contact@uoh.edu.so</a>
+            </li>
+            <li>
+              <i class="fas fa-map-pin" aria-hidden="true"></i>
+              <span>Pepsi Campus, Hargeisa</span>
+            </li>
+            <li>
+              <i class="fas fa-clock" aria-hidden="true"></i>
+              <span>Sat – Thu: 8:00 AM – 4:00 PM</span>
+            </li>
+          </ul>
+
+          <div class="footer__portals">
+            <a href="portal.html" class="btn btn--gold btn--sm">
+              <i class="fas fa-sign-in-alt"></i> University Portals
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="site-footer__bottom">
+      <div class="container site-footer__bottom-inner">
+        <p>© <span id="copyright-year">2026</span> University of Hargeisa. All rights reserved.</p>
+        <p class="footer__credits">Knowledge · Leadership · Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       BACK TO TOP
+  ═══════════════════════════════════════ -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
